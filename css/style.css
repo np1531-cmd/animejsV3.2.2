@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    color: #000;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.logo {
+    width: 75px;
+}
+
+nav ul {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #000;
+    font-size: 1.2em;
+    transition: 0.2s all;
+    padding: 10px 30px;
+    border-bottom: 2px solid #fff;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid #515192;
+}
+.active{
+    color: #fff;
+    background-color: #515192;
+    border: 2px solid #515192;
+}
+.active:hover{
+    border-bottom: 2px solid #515192;
+}
+
+.btn {
+    border: 2px solid #515192;
+    padding: 6px 25px;
+    border-radius: 30px;
+    margin-left: 30px;
+    transition: 0.2s all;
+    color: #000;
+    font-size: 1.2em;
+}
+
+.btn:hover {
+    border: 2px solid #515192;
+    background: #515192;
+    color: #fff;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10%;
+    justify-content: space-between;
+}
+
+.col-1 {
+    flex-basis: 35%;
+    min-width: 300px;
+    margin-bottom: 30px;
+    animation: up-down 2s ease-in-out alternate-reverse infinite both;
+}
+
+.col-1 img {
+    width: 100%;
+}
+
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+    margin-bottom: 30px;
+}
+
+.col-2 h1 {
+    font-size: 4.5em;
+    font-weight: 600;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.col-2 h1 span {
+    color: #515192;
+}
+
+.col-2 p {
+    margin: 10px 0 50px;
+    max-width: 580px;
+}
+
+.col-2 a {
+    padding: 10px 20px;
+    background: #515192;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+@keyframes up-down {
+    0% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
